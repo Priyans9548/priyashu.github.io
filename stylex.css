@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d6f0ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    color: #005f99;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+p {
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '✔';
+    color: #005f99;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
